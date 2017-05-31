@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 
 /*
- * GET userlist.
+ *This gets the user list
  */
 router.get('/userlist', function(req, res) {
     var db = req.db;
@@ -13,7 +13,7 @@ router.get('/userlist', function(req, res) {
 });
 
 /*
- * POST to adduser.
+ * this posts to add user
  */
 router.post('/adduser', function(req, res) {
     var db = req.db;
@@ -26,7 +26,7 @@ router.post('/adduser', function(req, res) {
 });
 
 /*
- * DELETE to deleteuser.
+ * this deletes a user
  */
 router.delete('/deleteuser/:id', function(req, res) {
     var db = req.db;
